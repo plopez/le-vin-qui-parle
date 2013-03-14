@@ -72,8 +72,8 @@ alert("2");
         $.getJSON('coupsCoeur.json', function(json) {
             alert(json);
             $('#vin').html(vin_template(json.vins[0]));
-            $('#vins').html(craftmen_template(json));
-            $('a.craftman').click(function(event) {
+            $('#vins').html(vins_template(json));
+            $('a.vin').click(function(event) {
                 $('#vin').html(vin_template(json.vins[event.target.id]));
                 $('html, body').animate({
                         scrollTop:$('#navbar').offset().top
