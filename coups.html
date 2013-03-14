@@ -70,7 +70,7 @@ alert("1");
 alert("2");
 
         $.getJSON('coupsCoeur.json', function(json) {
-            alert(json.vins[0]);
+            alert(json);
             $('#vin').html(vin_template(json.vins[0]));
             $('#vins').html(craftmen_template(json));
             $('a.craftman').click(function(event) {
