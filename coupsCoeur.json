@@ -1,4 +1,5 @@
-"vins" : [
+{
+    "vins" : [
         {
             "id":"0",
             "nom":"Chignin",
@@ -9,4 +10,5 @@
             "spanleft":5,
             "spanright":7
         }
-]
+    ]
+}
