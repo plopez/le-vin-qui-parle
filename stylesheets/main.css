@@ -1,3 +1,13 @@
+a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
 body {
     text-align: justify;
     -webkit-font-smoothing: antialiased;
@@ -588,12 +598,3 @@ img.team {
     filter: alpha(opacity = 90);
 }
 
-a {
-    color: #cccccc;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #005580;
-    text-decoration: underline;
-}
