@@ -28,7 +28,7 @@ title: Coups de coeur
                 <div class="span12">
                     <div id="a-vins" class="row-fluid">
                         <div class="span2" style="height:100%;">
-                            <img src="http://www.amicalementvin.com/media/catalog/product/cache/1/small_image/90x220/9df78eab33525d08d6e5fb8d27136e95/c/e/cellier-des-cray-savoie-blanc.jpg" />
+                            <img src="{{image}}" />
                         </div>
                         <div class="span8">
                             <h2>{{nom}}</h2>
@@ -46,7 +46,7 @@ title: Coups de coeur
 {{#each vins}}
 <li class = "span2">
         <div class = "thumbnail">
-        <a class = "craftman" href = "#vin"> <img id="{{id}}" class="border" src="images/equipe/{{small-picture}}" alt ="{{nom}}"></a>
+        <a class = "vin" href = "#vin"> <img id="{{id}}" class="border" src="{{image}}" alt ="{{nom}}"></a>
         <h5>{{nom}}</h5>
         </div>
 </li>
