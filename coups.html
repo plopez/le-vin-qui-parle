@@ -1,0 +1,84 @@
+---
+layout: main
+title: Coups de coeur
+---
+<script type="text/javascript" src="javascripts/handlebars-1.0.0.beta.4.js"></script>
+<script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/team.css"/>
+
+<div id="vin"></div>
+
+<div class="container">
+    <div class="row-fluid">
+        <div class="span12">
+            <div id="vins"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+{%raw%}
+-->
+
+<script id="vin-template" type="text/x-handlebars-template">
+    <div class="grey_wrapper vin">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="a-vins" class="row-fluid">
+                        <div class="span2" style="height:100%;">
+                            <img src="http://www.amicalementvin.com/media/catalog/product/cache/1/small_image/90x220/9df78eab33525d08d6e5fb8d27136e95/c/e/cellier-des-cray-savoie-blanc.jpg" />
+                        </div>
+                        <div class="span8">
+                            <h2>{{nom}}</h2>
+                            {{commentaire}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id = "vins-template" type = "text/x-handlebars-template" >
+<ul class = "thumbnails" >
+{{#each vins}}
+<li class = "span2">
+        <div class = "thumbnail">
+        <a class = "craftman" href = "#vin"> <img id="{{id}}" class="border" src="images/equipe/{{small-picture}}" alt ="{{nom}}"></a>
+        <h5>{{nom}}</h5>
+        </div>
+</li>
+{{/each}}
+</ul>
+</script>
+<!-- 
+{%endraw%}
+-->
+
+<script type="text/javascript">
+    var json;
+    $(document).ready(function() {
+        var vins_template = Handlebars.compile($('#vins-template').html());
+        var vin_template = Handlebars.compile($('#vin-template').html());
+
+        Handlebars.registerHelper('abstract', function() {
+            return new Handlebars.SafeString(this.abstract);
+        });
+
+        $.getJSON('coupsCoeur.json', function(json) {
+            $('#vin').html(vin_template(json.vins[0]));
+            $('#vins').html(craftmen_template(json));
+            $('a.craftman').click(function(event) {
+                $('#vin').html(vin_template(json.vins[event.target.id]));
+                $('html, body').animate({
+                        scrollTop:$('#navbar').offset().top
+                     }, 'slow');
+                return false;
+            });
+        });
+    });
+</script>
+
+

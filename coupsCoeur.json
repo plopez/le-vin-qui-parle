@@ -1,0 +1,12 @@
+"vins" : [
+        {
+            "id":"0",
+            "nom":"Chignin",
+            "domaine":"Le Cellier des Cray",
+            "type":"Vin de Savoie",
+            "prix":"8,00€",
+            "commentaire":"Il est super bon",
+            "spanleft":5,
+            "spanright":7
+        }
+]
