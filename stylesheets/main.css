@@ -1,13 +1,3 @@
-a {
-    color: #cccccc;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #005580;
-    text-decoration: underline;
-}
-
 body {
     text-align: justify;
     -webkit-font-smoothing: antialiased;
@@ -272,7 +262,7 @@ footer h2 {
 }
 
 .footer-inner a:link, a:visited, a:hover, a:active {
-    color: #999999;
+    color: #cccccc;
 }
 
 .footer-inner a:hover {
