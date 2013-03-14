@@ -67,9 +67,8 @@ title: Coups de coeur
             return new Handlebars.SafeString(this.abstract);
         });
 
-        alert("ok");
-
         $.getJSON('coupsCoeur.json', function(json) {
+            alert(json.vins[0]);
             $('#vin').html(vin_template(json.vins[0]));
             $('#vins').html(craftmen_template(json));
             $('a.craftman').click(function(event) {
