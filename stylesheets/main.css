@@ -262,7 +262,7 @@ footer h2 {
 }
 
 .footer-inner a:link, a:visited, a:hover, a:active {
-    color: #cccccc;
+    color: #cc0033;
 }
 
 .footer-inner a:hover {
@@ -588,3 +588,7 @@ img.team {
     filter: alpha(opacity = 90);
 }
 
+a {
+    color: #cc0033;
+    text-decoration: none;
+}
