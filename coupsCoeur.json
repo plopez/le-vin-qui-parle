@@ -9,14 +9,6 @@
             "commentaire":"Il est super bon",
             "image":"http://www.amicalementvin.com/media/catalog/product/cache/1/small_image/90x220/9df78eab33525d08d6e5fb8d27136e95/c/e/cellier-des-cray-savoie-blanc.jpg",
         },
-        {
-            "id":"1",
-            "nom":"Cuvée Octavie",
-            "domaine":"Le Cellier des Cray",
-            "type":"Vin de Savoie",
-            "prix":"15,00€",
-            "commentaire":"Il est encore plus super bon",
-            "image":"http://www.amicalementvin.com/media/catalog/product/cache/1/small_image/90x220/9df78eab33525d08d6e5fb8d27136e95/c/e/cellier-des-cray-savoie_octavie.jpg",
-        }
+        
     ]
 }
