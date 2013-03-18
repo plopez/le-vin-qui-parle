@@ -33,18 +33,20 @@ title: Vignerons
                             <h3>"{{title}}"</h3>
                             {{abstract}}
                         </div>
-                        <div id="picto">
-                                {{#if github-url}}
-                                <a target="_blank" href="{{github-url}}"><img class="picto" src="images/equipe/picto/github.png" alt="Github de {{name}}"></a>
-                                {{/if}}
-                                {{#if twitter-url}}
-                                <a target="_blank" href="{{twitter-url}}"><img class="picto" src="images/equipe/picto/twitter.png" alt="Twitter de {{name}}"> </a>
-                                {{/if}}
-                                {{#if linkedin-url}}
-                                <a target="_blank" href="{{linkedin-url}}"><img class="picto" src="images/equipe/picto/linkedin.png" alt="Linkedin de {{name}}">  </a>
-                                {{/if}}
-                                <a target="_blank" href="mailto:{{email}}"><img class="picto" src="images/equipe/picto/mail.png" alt="email de {{name}}"></a>
-                         </div>
+                        <div class="span{{spanright}}">
+                            <img id="{{nick}}" class="team-big-picture" src="images/equipe/{{big-picture}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div id="a-craftman" class="row-fluid">
+                        <div class="span{{spanleft}}" style="height:100%;">
+                            <h2>{{name}}</h2>
+                            <h3>"{{title}}"</h3>
+                            {{abstract}}
+                        </div>
                         <div class="span{{spanright}}">
                             <img id="{{nick}}" class="team-big-picture" src="images/equipe/{{big-picture}}">
                         </div>
